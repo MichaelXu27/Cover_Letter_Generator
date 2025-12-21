@@ -3,6 +3,7 @@ from pathlib import Path
 import PyPDF2
 
 def load_examples(folder, exts=(".pdf"), max_chars_per_file: int = 2500, max_total_chars: int = 10000):
+    """Loads example resumes that can be dropped into the examples folder"""
     p = Path(folder)
     if not p.exists() or not p.is_dir():
         return ""
@@ -49,6 +50,7 @@ def initialize_main_agent(examples_dir):
 
     if examples_text:
         base_instructions += "\n\nEXAMPLE COVER LETTERS (use these for style/formatting reference):\n\n" + examples_text
+        
     main_agent = Agent(
         name="Cover Letter Agent",
         instructions=base_instructions
