@@ -23,7 +23,7 @@ session_type = "persistent"
 def initialize_agent():
     """Initialize our Cover Letter Agent"""
 
-    main_agent = initialize_main_agent()
+    main_agent = initialize_main_agent(examples_dir="examples")
 
     return main_agent
 
