@@ -4,8 +4,8 @@
 
 **Quick Start**
 - **Install**: Run `pip install -r requirements.txt`.
-- **Run**: Start the UI with `streamlit run app.py`.
-- **Env**: Add any API keys or config to a `.env` file (the app calls `load_dotenv()`).
+- **Run**: Start the UI with `streamlit run streamlit_app.py`.
+- **Env**: Add any API keys or config to a `.env` file (the app calls `load_dotenv()`), or paste your OpenAI API key in the sidebar.
 
 **Inputs**
 - **Name**: Your full name.
@@ -19,7 +19,7 @@
 - Open the app with:
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 - Fill `Name`, `Position`, and `Job Description`.
